@@ -64,5 +64,5 @@ jobs:
         with:
           app-name: 'BlossomBilliardSim'
           slot-name: 'Production'
-          package: .
+          package: 'HTML code for BILLIARD SIM.HTML'
           
