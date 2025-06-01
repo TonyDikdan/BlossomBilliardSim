@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'HTML code for BILLIARD SIM.html'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
       id-token: write #This is required for requesting the JWT
@@ -63,6 +63,6 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'BlossomBilliardSim'
-          slot-name: 'HTML code for BILLIARD SIM.html'
+          slot-name: 'Production'
           package: .
           
